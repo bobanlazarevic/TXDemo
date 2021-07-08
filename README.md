@@ -25,14 +25,15 @@
 
 = Dowload source code
 
-Run Main_Loading.java to print all entries to the console
-Run Main_Counting.java to count all entries based on UIDs
+- Run Main_Loading.java to print all entries to the console
+- Run Main_Counting.java to count all entries based on UIDs
 
 = Useful commands
-./kafka-topics.sh --zookeeper localhost:2181 --list
-./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --all-groups -describe
-Update (APP-ID) and (TOPIC-NAME) to reflect configuration
-./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group (APP-ID) --reset-offsets --to-earliest --topic (TOPIC-NAME) -execute
+- ./kafka-topics.sh --zookeeper localhost:2181 --list
+- ./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --all-groups -describe
+
+= Update (APP-ID) and (TOPIC-NAME) to reflect real names
+- ./kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group (APP-ID) --reset-offsets --to-earliest --topic (TOPIC-NAME) -execute
 
 = Metrics
-https://github.com/yahoo/cmak
+- https://github.com/yahoo/cmak
